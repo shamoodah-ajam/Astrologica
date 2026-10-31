@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+body {
+    background-color: #3A1D4D;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+main {
+
+}
+
+.header_hr {
+    height: 3px;
+    background-color: #D4AF37;
+    border: none;
+}
+
+footer {
+    color: white;
+}
+
+.heading {
+    color: #D4AF37;
+    font-family: Allura, 'Brush Script MT', cursive;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.font {
+    color: #D4AF37;
+    text-decoration: none;
+    display: block;
+    padding: 14px 10px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
