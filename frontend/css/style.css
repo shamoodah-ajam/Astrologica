@@ -4,15 +4,32 @@
 body {
     background-color: #001B3A;
 }
+
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 20px;
 }
 
 main {
-    color: white;
+    color: #f2e58f;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+footer {
+    color: #f2e58f;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    margin: 5px; 
 }
 
 .header_hr {
@@ -20,10 +37,6 @@ main {
     background-color: #D4AF37;
     border: none;
     width: 100%;
-}
-
-footer {
-    color: white;
 }
 
 .heading {
@@ -60,4 +73,8 @@ nav ul {
     gap: 20px;
     margin: 0;
     padding: 0;
+}
+
+p {
+ 
 }
