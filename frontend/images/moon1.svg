@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="200"
+     height="200"
+     viewBox="0 0 600 200">
+
+    <defs>
+
+        <!-- Glow effect -->
+        <filter id="glow"
+                x="-50%"
+                y="-50%"
+                width="200%"
+                height="200%">
+
+            <feGaussianBlur
+                stdDeviation="8"
+                result="blur"/>
+
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+
+        </filter>
+
+        <!-- Crescent mask -->
+        <mask id="crescentMask">
+
+            <rect width="600"
+                  height="200"
+                  fill="white"/>
+
+            <circle
+                cx="320"
+                cy="100"
+                r="65"
+                fill="black"
+                style="filter: blur(3px)"/>
+
+        </mask>
+
+    </defs>
+
+    <!-- Moon -->
+    <circle
+        cx="300"
+        cy="100"
+        r="70"
+        fill="#A9D6F5"
+        mask="url(#crescentMask)"
+        filter="url(#glow)"
+    />
+
+</svg>
